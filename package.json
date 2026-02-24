@@ -3,6 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "dev": "bun run --watch src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist --target bun --minify",
+    "start": "bun run ./dist/index.js",
     "typecheck": "bun tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "bun run src/db/migrate.ts",
