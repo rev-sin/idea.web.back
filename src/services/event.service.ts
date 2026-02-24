@@ -1,12 +1,12 @@
+import { eq } from "drizzle-orm";
 import { db } from "../db";
 import { events } from "../db/schema";
-import { eq } from "drizzle-orm";
 
 export async function getAllEvents() {
-    return db.select().from(events).orderBy(events.name);
+	return db.select().from(events).orderBy(events.name);
 }
 
 export async function getEventById(id: number) {
-    const result = await db.select().from(events).where(eq(events.id, id));
-    return result[0] ?? null;
+	const result = await db.select().from(events).where(eq(events.id, id));
+	return result[0] ?? null;
 }
