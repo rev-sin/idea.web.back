@@ -39,7 +39,7 @@ const app = new Elysia()
 			headers: { "Content-Type": "application/json" },
 		});
 	})
-	.listen(3000);
+	.listen({ port: 3000, hostname: "0.0.0.0" });
 
 console.log(
 	`Avishkar - IDEA Leaderboard API running at http://${app.server?.hostname}:${app.server?.port}`,
