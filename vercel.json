@@ -1,4 +1,8 @@
 {
-	"bunVersion": "1.x",
-	"rewrites": [{ "source": "/(.*)", "destination": "/src/index.ts" }]
+	"runtimes": {
+		"src/index.ts": {
+			"runtime": "edge"
+		}
+	},
+	"bunVersion": "latest"
 }
