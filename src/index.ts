@@ -48,4 +48,4 @@ console.log(
 	`Swagger docs at http://${app.server?.hostname}:${app.server?.port}/swagger`,
 );
 
-// export type App = typeof app;
+export default app;
