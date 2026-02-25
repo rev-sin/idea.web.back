@@ -15,7 +15,7 @@
 # production
 /build
 /dist
-/server
+*.exe
 
 # database (SQLite file — copy manually to migrate)
 data/*.db
